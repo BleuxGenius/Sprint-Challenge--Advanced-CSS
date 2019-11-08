@@ -1,1 +1,32 @@
 // Mixins Here
+
+// centers and aligns items
+.flex(@justify:center, @align:center){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+// centers items
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// adjustments to the buttons 
+.buttons(@border: none; @align: center) {
+border: @border;
+text-align: @align;
+width: 40%;
+background-color: @btn-bg-color;
+color: white;
+border-radius: 12px;
+font-size: 15px;
+text-decoration: none;
+padding: 15px 15px;
+
+}
+
+// .buttons(none, center) :hover{
+
+// }
+
