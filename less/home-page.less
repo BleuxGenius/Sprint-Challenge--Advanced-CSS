@@ -47,6 +47,11 @@
     justify-content: center;
 
     // add mobile fix here
+    @media mobile {
+      margin: none;
+      padding: none;
+      flex-direction: column;
+    }
 
     .walk-text {
       width: 50%;
@@ -62,12 +67,24 @@
       .btn {
         .buttons(none,center);
       }
+      :hover{
+        color: black;
+        background-color: white;
+      }
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .walk-img {
+      @media @mobile {
+        width: 100%;
+      }
       width: 46%;
       margin-left: 4%;
-      
+    }
+
       img {
         width: 100%;
         height: auto;
@@ -75,4 +92,48 @@
       }
     }
   }
-}// home
+// home
+
+.space-images{
+.flex;
+}
+
+
+.walk {
+  @media @mobile {
+  .flex;
+  flex-direction: column-reverse;
+}
+}
+
+img.blast{
+  @media @mobile {
+  align-self: center;
+  width: 100%;
+  }
+}
+
+.sky{
+  @media @mobile {
+    display: none;
+  }
+}
+
+.launch{
+  @media @mobile {
+    display: none;
+  }
+}
+
+.btn{
+  @media @mobile {
+    width: 100%;
+  }
+}
+
+// @media @mobile{
+//   .home .walk .walk-text .walk-img {
+//     width: 100%;
+//     height: auto;
+//   }
+// }

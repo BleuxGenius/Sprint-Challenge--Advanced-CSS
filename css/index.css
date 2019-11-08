@@ -235,6 +235,13 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media mobile {
+  .home .walk {
+    margin: none;
+    padding: none;
+    flex-direction: column;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -255,12 +262,60 @@ footer {
   text-decoration: none;
   padding: 15px 15px;
 }
+.home .walk .walk-text :hover {
+  color: black;
+  background-color: white;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+@media (max-width:500px) {
+  .home .walk .walk-img {
+    width: 100%;
+  }
+}
+.home .walk img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.space-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:500px) {
+  .walk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width:500px) {
+  img.blast {
+    align-self: center;
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .sky {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .launch {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .btn {
+    width: 100%;
+  }
 }
